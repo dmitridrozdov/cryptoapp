@@ -9,6 +9,9 @@ const App = () => {
                 {/* <Navbar /> */}
             </div>
             <div className="main">
+
+            </div>
+            <div className="footer">
                 
             </div>
         </div>
