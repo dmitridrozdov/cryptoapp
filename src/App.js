@@ -12,7 +12,9 @@ const App = () => {
                 <Navbar />
             </div>
             <div className="main">
-
+                <Layout>
+                    
+                </Layout>
             </div>
             <div className="footer">
 
