@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import { Layout, Typography, Space } from 'antd'
 
-import { Navbar } from './components'
+import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components'
 import './App.css'
 
 const App = () => {
@@ -13,23 +13,23 @@ const App = () => {
             </div>
             <div className="main">
                 <Layout>
-                <Switch>
-                    <Route exact path="/">
-                        <Homepage />
-                    </Route>
-                    <Route exact path="/exchanges">
-                        <Exchanges />
-                    </Route>
-                    <Route exact path="/cryptocurrencies">
-                        <Cryptocurrencies />
-                    </Route>
-                    <Route exact path="/crypto/:coinId">
-                        <CryptoDetails />
-                    </Route>
-                    <Route exact path="/news">
-                        <News />
-                    </Route>
-                </Switch>
+                    <Switch>
+                        <Route exact path="/">
+                            <Homepage />
+                        </Route>
+                        <Route exact path="/exchanges">
+                            <Exchanges />
+                        </Route>
+                        <Route exact path="/cryptocurrencies">
+                            <Cryptocurrencies />
+                        </Route>
+                        <Route exact path="/crypto/:coinId">
+                            <CryptoDetails />
+                        </Route>
+                        <Route exact path="/news">
+                            <News />
+                        </Route>
+                    </Switch>
                 </Layout>
             </div>
             <div className="footer">
