@@ -13,7 +13,7 @@ const Homepage = () => {
     // const { exchangeData } = useGetExchangesQuery()
 
     console.log(data)
-    console.log('isFetching = ' + isFetching)
+    if (isFetching) return 'Loading...'
 
     return (
         <>
