@@ -3,16 +3,15 @@ import millify from 'millify'
 import { Typography, Row, Col, Statistic } from 'antd'
 import { Link } from 'react-router-dom'
 
-import { useGetCryptosQuery, useGetExchangesQuery } from '../services/cryptoApi'
+import { useGetCryptosQuery } from '../services/cryptoApi'
 
 const { Title } = Typography
 
 const Homepage = () => {
     const { data, isFetching } = useGetCryptosQuery(10)
+    const globalStats = data?.data?.stats
 
-    // const { exchangeData } = useGetExchangesQuery()
-
-    console.log(data)
+    console.log(globalStats)
     if (isFetching) return 'Loading...'
 
     return (
