@@ -8,7 +8,13 @@ import Loader from './Loader'
 const { Text, Title } = Typography
 const { Option } = Select
 
-const News = () => {
+const News = ({ simplified }) => {
+    const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
+    const { data } = useGetCryptosQuery(100)
+    const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 })
+
+    if (!cryptoNews?.value) return <Loader />
+
     return (
         <div>
             News
