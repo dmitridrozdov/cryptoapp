@@ -5,6 +5,9 @@ import { useGetCryptosQuery } from '../services/cryptoApi'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 import Loader from './Loader'
 
+const { Text, Title } = Typography
+const { Option } = Select
+
 const News = () => {
     return (
         <div>
