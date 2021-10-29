@@ -17,7 +17,9 @@ const News = ({ simplified }) => {
 
     return (
         <Row gutter={[24, 24]}>
-            
+            {cryptoNews.value.map((news, i) => (
+                
+            ))}
         </Row>
     )
 }
