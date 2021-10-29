@@ -16,9 +16,9 @@ const News = ({ simplified }) => {
     if (!cryptoNews?.value) return <Loader />
 
     return (
-        <div>
-            News
-        </div>
+        <Row gutter={[24, 24]}>
+            
+        </Row>
     )
 }
 
