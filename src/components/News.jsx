@@ -18,7 +18,9 @@ const News = ({ simplified }) => {
     return (
         <Row gutter={[24, 24]}>
             {cryptoNews.value.map((news, i) => (
-                
+                <Col xs={24} sm={12} lg={8} key={i}>
+                    
+                </Col>
             ))}
         </Row>
     )
