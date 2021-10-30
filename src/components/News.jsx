@@ -19,7 +19,9 @@ const News = ({ simplified }) => {
         <Row gutter={[24, 24]}>
             {cryptoNews.value.map((news, i) => (
                 <Col xs={24} sm={12} lg={8} key={i}>
-                    
+                    <Card hoverable className="news-card">
+                        
+                    </Card>
                 </Col>
             ))}
         </Row>
