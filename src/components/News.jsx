@@ -8,6 +8,8 @@ import Loader from './Loader'
 const { Text, Title } = Typography
 const { Option } = Select
 
+const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
+
 const News = ({ simplified }) => {
     const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
     const { data } = useGetCryptosQuery(100)
@@ -22,7 +24,8 @@ const News = ({ simplified }) => {
                     <Card hoverable className="news-card">
                         <a href={news.url} target="_blank" rel="noreferrer">
                             <div className="news-image-container">
-
+                                <Title className="news-title" level={4}>{news.name}</Title>
+                                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="" />
                             </div>
                         </a>
                     </Card>
