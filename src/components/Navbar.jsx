@@ -6,6 +6,8 @@ import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOut
 import icon from '../images/cryptocurrency.png'
 
 const Navbar = () => {
+    const [activeMenu, setActiveMenu] = useState(true)
+
     return (
         <div className="nav-container">
             <div className="logo-container">
