@@ -7,6 +7,7 @@ import icon from '../images/cryptocurrency.png'
 
 const Navbar = () => {
     const [activeMenu, setActiveMenu] = useState(true)
+    const [screenSize, setScreenSize] = useState(undefined)
 
     return (
         <div className="nav-container">
