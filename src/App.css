@@ -21,6 +21,8 @@ a:hover{
 .app{
     display: flex;
     overflow: hidden;
+    font-family: 'Arsenal';
+    /* font-size: '14px'; */
 }
 
 .navbar{
@@ -29,7 +31,7 @@ a:hover{
 }
 
 .main{
-    flex: 1.1;
+    flex: 1.2;
     width: 100%;
     
 }
@@ -55,6 +57,7 @@ a:hover{
 
 .logo{
     margin:10px 0 0 10px;
+
 }
 
 .menu-control-container{
@@ -370,7 +373,7 @@ width: 70%;
 }
 
 .footer {
-    background-color: #001529;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 20px;
