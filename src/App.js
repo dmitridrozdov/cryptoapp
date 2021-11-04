@@ -14,7 +14,7 @@ const App = () => {
             </div>
             <div className="main">
                 <Layout>
-                    <Switch>
+                    {/* <Switch>
                         <Route exact path="/">
                             <Homepage />
                         </Route>
@@ -30,7 +30,7 @@ const App = () => {
                         <Route exact path="/news">
                             <News />
                         </Route>
-                    </Switch>
+                    </Switch> */}
                 </Layout>
                 <div className="footer">
                     <Typography.Title level={5} style={{ textAlign: 'center' }}>Copyright © 2021
