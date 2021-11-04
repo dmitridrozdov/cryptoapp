@@ -1,11 +1,11 @@
 
 :root{
-    --text-primary:#000;
+    /* --text-primary:rgb(233, 140, 140);
     --bgPrimary:#fff;
-   --bgSecondary: #F9F9F9;
-   --pink: #0071bd;
-   --light-blue: #e6f7ff;
-   --border: #d9d9d9;
+   --bgSecondary: #ffffff;
+   --pink: #ffffff;
+   --light-blue: #ffffff;
+   --border: #ffffff; */
 }
 
 * {
@@ -21,8 +21,7 @@ a:hover{
 .app{
     display: flex;
     overflow: hidden;
-    font-family: 'Arsenal';
-    /* font-size: '14px'; */
+    font-family: 'Roboto Slab';
 }
 
 .navbar{
@@ -31,8 +30,7 @@ a:hover{
 }
 
 .main{
-    flex: 1.2;
-    width: 100%;
+    flex: 1
     
 }
 .routes{
@@ -117,7 +115,7 @@ a:hover{
         position:fixed;
         width: 100%;
         z-index: 100;
-        background-color: var(--bgSecondary);
+
     }
   
     .menu-control-container{
