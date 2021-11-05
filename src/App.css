@@ -30,7 +30,8 @@ a:hover{
 }
 
 .main{
-    flex: 1
+    flex: 1;
+    background-color: #ffffff;
     
 }
 .routes{
@@ -132,6 +133,8 @@ a:hover{
     .show-more{
         font-size: 1.3rem !important;
     }
+
+
 }
 
 .coin-detail-container{
