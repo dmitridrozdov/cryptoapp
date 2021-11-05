@@ -13,8 +13,8 @@ const App = () => {
                 <Navbar />
             </div>
             <div className="main">
-                <Layout>
-                    {/* <Switch>
+                {/* <Layout> */}
+                    <Switch>
                         <Route exact path="/">
                             <Homepage />
                         </Route>
@@ -30,8 +30,8 @@ const App = () => {
                         <Route exact path="/news">
                             <News />
                         </Route>
-                    </Switch> */}
-                </Layout>
+                    </Switch>
+                {/* </Layout> */}
                 <div className="footer">
                     <Typography.Title level={5} style={{ textAlign: 'center' }}>Copyright © 2021
                         All Rights Reserved.
